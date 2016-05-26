@@ -1,0 +1,76 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="org.robovm.samples.contractr.android.fragment.EditTaskFragment">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:hint="Title"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/notes"
+                android:hint="Notes"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Client"
+                    android:padding="8dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:gravity="center_vertical"/>
+            <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/clientPicker"
+                    android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Complete"
+                    android:padding="8dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:gravity="center_vertical"/>
+            <ToggleButton
+                    style="@style/ToggleButton"
+                    android:id="@+id/finished"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textOn="Yes"
+                    android:textOff="No"/>
+        </LinearLayout>
+
+        <View style="@style/Separator"
+              android:id="@+id/separator"
+              android:layout_marginTop="20dp"
+              android:layout_marginBottom="6dp"/>
+
+        <include layout="@layout/ok_cancel_buttons"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>
