@@ -1,28 +1,28 @@
 package org.robovm.samples.contractr.ios.views;
 
-import com.intel.moe.natj.general.Pointer;
-import com.intel.moe.natj.general.ann.ByValue;
-import com.intel.moe.natj.general.ann.RegisterOnStartup;
-import com.intel.moe.natj.objc.ObjCRuntime;
-import com.intel.moe.natj.objc.ann.ObjCClassName;
+import org.moe.natj.general.Pointer;
+import org.moe.natj.general.ann.ByValue;
+import org.moe.natj.general.ann.RegisterOnStartup;
+import org.moe.natj.objc.ObjCRuntime;
+import org.moe.natj.objc.ann.ObjCClassName;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import ios.coregraphics.opaque.CGContextRef;
-import ios.coregraphics.struct.CGPoint;
-import ios.coregraphics.struct.CGRect;
-import ios.coregraphics.struct.CGSize;
-import ios.foundation.NSCoder;
-import ios.uikit.UIBezierPath;
-import ios.uikit.UIColor;
-import ios.uikit.UIView;
+import apple.coregraphics.opaque.CGContextRef;
+import apple.coregraphics.struct.CGPoint;
+import apple.coregraphics.struct.CGRect;
+import apple.coregraphics.struct.CGSize;
+import apple.foundation.NSCoder;
+import apple.uikit.UIBezierPath;
+import apple.uikit.UIColor;
+import apple.uikit.UIView;
 
-import static ios.coregraphics.c.CoreGraphics.CGContextAddEllipseInRect;
-import static ios.coregraphics.c.CoreGraphics.CGContextSetFillColorWithColor;
-import static ios.uikit.c.UIKit.UIGraphicsGetCurrentContext;
+import static apple.coregraphics.c.CoreGraphics.CGContextAddEllipseInRect;
+import static apple.coregraphics.c.CoreGraphics.CGContextSetFillColorWithColor;
+import static apple.uikit.c.UIKit.UIGraphicsGetCurrentContext;
 
-@com.intel.moe.natj.general.ann.Runtime(ObjCRuntime.class)
+@org.moe.natj.general.ann.Runtime(ObjCRuntime.class)
 @ObjCClassName("PieChartView")
 @RegisterOnStartup
 public class PieChartView extends UIView {

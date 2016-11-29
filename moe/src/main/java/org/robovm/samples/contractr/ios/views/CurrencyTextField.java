@@ -1,24 +1,24 @@
 package org.robovm.samples.contractr.ios.views;
 
-import com.intel.moe.natj.general.Pointer;
-import com.intel.moe.natj.general.ann.ByValue;
-import com.intel.moe.natj.general.ann.RegisterOnStartup;
-import com.intel.moe.natj.objc.ObjCRuntime;
-import com.intel.moe.natj.objc.ann.ObjCClassName;
+import org.moe.natj.general.Pointer;
+import org.moe.natj.general.ann.ByValue;
+import org.moe.natj.general.ann.RegisterOnStartup;
+import org.moe.natj.objc.ObjCRuntime;
+import org.moe.natj.objc.ann.ObjCClassName;
 
 import java.math.BigDecimal;
 import java.text.NumberFormat;
 import java.util.Locale;
 
-import ios.foundation.NSCoder;
-import ios.foundation.struct.NSRange;
-import ios.uikit.UITextField;
-import ios.uikit.UITextPosition;
-import ios.uikit.enums.UIControlEvents;
-import ios.uikit.enums.UIKeyboardType;
-import ios.uikit.protocol.UITextFieldDelegate;
+import apple.foundation.NSCoder;
+import apple.foundation.struct.NSRange;
+import apple.uikit.UITextField;
+import apple.uikit.UITextPosition;
+import apple.uikit.enums.UIControlEvents;
+import apple.uikit.enums.UIKeyboardType;
+import apple.uikit.protocol.UITextFieldDelegate;
 
-@com.intel.moe.natj.general.ann.Runtime(ObjCRuntime.class)
+@org.moe.natj.general.ann.Runtime(ObjCRuntime.class)
 @ObjCClassName("CurrencyTextField")
 @RegisterOnStartup
 public class CurrencyTextField extends UITextField implements UITextFieldDelegate {

@@ -26,7 +26,7 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
-	<key>Intel.MOE.Main.Class</key>
+	<key>MOE.Main.Class</key>
 	<string>org.robovm.samples.contractr.ios.ContractRApp</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>

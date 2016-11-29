@@ -5,16 +5,13 @@
 buildscript {
     // Add central and local Maven repos
     repositories {
-        maven {
-            url uri(System.getenv("INTEL_MULTI_OS_ENGINE_HOME") + "/gradle")
+        repositories {
+            jcenter()
+            mavenLocal()
         }
-        mavenCentral()
-
-        maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
     }
     dependencies {
-        // MOE plugin
-        classpath 'com.intel.gradle:moeGradlePlugin:1.1.+'
+        classpath group: 'org.multi-os-engine', name: 'moe-gradle', version: '1.2.+'
     }
 }
 
@@ -25,6 +22,7 @@ buildscript {
 // Apply plugins
 apply plugin: 'moe'
 apply plugin: 'org.inferred.processors'
+apply plugin: 'eclipse'
 
 // Set source and target to Java 8
 sourceCompatibility = "1.8"
@@ -32,9 +30,6 @@ targetCompatibility = "1.8"
 
 // Set maven repository
 repositories {
-    maven {
-        url uri(System.getenv("INTEL_MULTI_OS_ENGINE_HOME") + "/gradle")
-    }
     mavenCentral()
     maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
 }
@@ -63,6 +58,14 @@ dependencies {
 
     processor "com.google.dagger:dagger-compiler:2.0"
 
+}
+
+// Setup Eclipse
+eclipse {
+    // Set Multi-OS Engine nature
+    project {
+        natures 'org.multi-os-engine.project'
+    }
 }
 
 

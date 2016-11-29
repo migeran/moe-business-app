@@ -1,12 +1,12 @@
 package org.robovm.samples.contractr.ios.viewcontrollers;
 
-import com.intel.moe.natj.general.Pointer;
-import com.intel.moe.natj.general.ann.Owned;
-import com.intel.moe.natj.general.ann.RegisterOnStartup;
-import com.intel.moe.natj.objc.ObjCRuntime;
-import com.intel.moe.natj.objc.ann.ObjCClassName;
-import com.intel.moe.natj.objc.ann.Property;
-import com.intel.moe.natj.objc.ann.Selector;
+import org.moe.natj.general.Pointer;
+import org.moe.natj.general.ann.Owned;
+import org.moe.natj.general.ann.RegisterOnStartup;
+import org.moe.natj.objc.ObjCRuntime;
+import org.moe.natj.objc.ann.ObjCClassName;
+import org.moe.natj.objc.ann.Property;
+import org.moe.natj.objc.ann.Selector;
 
 import org.robovm.samples.contractr.core.Client;
 import org.robovm.samples.contractr.core.ClientModel;
@@ -16,9 +16,9 @@ import java.math.BigDecimal;
 
 import javax.inject.Inject;
 
-import ios.uikit.UITextField;
+import apple.uikit.UITextField;
 
-@com.intel.moe.natj.general.ann.Runtime(ObjCRuntime.class)
+@org.moe.natj.general.ann.Runtime(ObjCRuntime.class)
 @ObjCClassName("EditClientViewController")
 @RegisterOnStartup
 public class EditClientViewController extends InjectedTableViewController {

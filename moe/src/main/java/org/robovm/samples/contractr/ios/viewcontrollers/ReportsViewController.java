@@ -1,13 +1,13 @@
 package org.robovm.samples.contractr.ios.viewcontrollers;
 
-import com.intel.moe.natj.general.Pointer;
-import com.intel.moe.natj.general.ann.NInt;
-import com.intel.moe.natj.general.ann.Owned;
-import com.intel.moe.natj.general.ann.RegisterOnStartup;
-import com.intel.moe.natj.objc.ObjCRuntime;
-import com.intel.moe.natj.objc.ann.ObjCClassName;
-import com.intel.moe.natj.objc.ann.Property;
-import com.intel.moe.natj.objc.ann.Selector;
+import org.moe.natj.general.Pointer;
+import org.moe.natj.general.ann.NInt;
+import org.moe.natj.general.ann.Owned;
+import org.moe.natj.general.ann.RegisterOnStartup;
+import org.moe.natj.objc.ObjCRuntime;
+import org.moe.natj.objc.ann.ObjCClassName;
+import org.moe.natj.objc.ann.Property;
+import org.moe.natj.objc.ann.Selector;
 
 import org.robovm.samples.contractr.core.Client;
 import org.robovm.samples.contractr.core.ClientModel;
@@ -22,18 +22,18 @@ import java.util.concurrent.TimeUnit;
 
 import javax.inject.Inject;
 
-import ios.NSObject;
-import ios.c.Globals;
-import ios.foundation.NSIndexPath;
-import ios.uikit.UIColor;
-import ios.uikit.UILabel;
-import ios.uikit.UISegmentedControl;
-import ios.uikit.UITableView;
-import ios.uikit.UITableViewCell;
-import ios.uikit.UIView;
-import ios.uikit.protocol.UITableViewDataSource;
+import apple.NSObject;
+import apple.c.Globals;
+import apple.foundation.NSIndexPath;
+import apple.uikit.UIColor;
+import apple.uikit.UILabel;
+import apple.uikit.UISegmentedControl;
+import apple.uikit.UITableView;
+import apple.uikit.UITableViewCell;
+import apple.uikit.UIView;
+import apple.uikit.protocol.UITableViewDataSource;
 
-@com.intel.moe.natj.general.ann.Runtime(ObjCRuntime.class)
+@org.moe.natj.general.ann.Runtime(ObjCRuntime.class)
 @ObjCClassName("ReportsViewController")
 @RegisterOnStartup
 public class ReportsViewController extends InjectedViewController implements UITableViewDataSource {
@@ -76,7 +76,7 @@ public class ReportsViewController extends InjectedViewController implements UIT
         return 1;
     }
 
-    @com.intel.moe.natj.general.ann.Runtime(ObjCRuntime.class)
+    @org.moe.natj.general.ann.Runtime(ObjCRuntime.class)
     @ObjCClassName("ReportsClientCell")
     @RegisterOnStartup
     public static class ReportsClientCell extends UITableViewCell {

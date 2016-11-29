@@ -1,11 +1,11 @@
 package org.robovm.samples.contractr.ios.viewcontrollers;
 
-import com.intel.moe.natj.general.Pointer;
-import com.intel.moe.natj.objc.ann.ObjCClassName;
+import org.moe.natj.general.Pointer;
+import org.moe.natj.objc.ann.ObjCClassName;
 
 import org.robovm.samples.contractr.ios.ContractRApp;
 
-import ios.uikit.UIViewController;
+import apple.uikit.UIViewController;
 
 /**
  * Abstract {@link UIViewController} which handles dependency injection using Dagger.

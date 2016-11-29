@@ -2,7 +2,7 @@ package org.robovm.samples.contractr.ios;
 
 import org.robovm.samples.contractr.core.ui.Colors;
 
-import ios.uikit.UIColor;
+import apple.uikit.UIColor;
 
 /**
  * Colors used by ContractR.

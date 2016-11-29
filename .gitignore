@@ -3,3 +3,8 @@ build/
 .idea/
 *.iml
 /ios/robovm-build/
+.project
+local.properties
+.settings
+bin
+.classpath

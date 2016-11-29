@@ -1,12 +1,12 @@
 package org.robovm.samples.contractr.ios.viewcontrollers;
 
-import com.intel.moe.natj.general.Pointer;
-import com.intel.moe.natj.general.ann.NInt;
-import com.intel.moe.natj.general.ann.Owned;
-import com.intel.moe.natj.general.ann.RegisterOnStartup;
-import com.intel.moe.natj.objc.ObjCRuntime;
-import com.intel.moe.natj.objc.ann.ObjCClassName;
-import com.intel.moe.natj.objc.ann.Selector;
+import org.moe.natj.general.Pointer;
+import org.moe.natj.general.ann.NInt;
+import org.moe.natj.general.ann.Owned;
+import org.moe.natj.general.ann.RegisterOnStartup;
+import org.moe.natj.objc.ObjCRuntime;
+import org.moe.natj.objc.ann.ObjCClassName;
+import org.moe.natj.objc.ann.Selector;
 
 import org.robovm.samples.contractr.core.Client;
 import org.robovm.samples.contractr.core.ClientModel;
@@ -15,21 +15,21 @@ import org.robovm.samples.contractr.core.TaskModel;
 
 import javax.inject.Inject;
 
-import ios.foundation.NSArray;
-import ios.foundation.NSAttributedString;
-import ios.foundation.NSDictionary;
-import ios.foundation.NSIndexPath;
-import ios.foundation.NSMutableDictionary;
-import ios.foundation.NSNumber;
-import ios.uikit.UITableView;
-import ios.uikit.UITableViewCell;
-import ios.uikit.c.UIKit;
-import ios.uikit.enums.NSUnderlineStyle;
-import ios.uikit.enums.UITableViewCellAccessoryType;
-import ios.uikit.enums.UITableViewCellStyle;
-import ios.uikit.enums.UITableViewRowAnimation;
+import apple.foundation.NSArray;
+import apple.foundation.NSAttributedString;
+import apple.foundation.NSDictionary;
+import apple.foundation.NSIndexPath;
+import apple.foundation.NSMutableDictionary;
+import apple.foundation.NSNumber;
+import apple.uikit.UITableView;
+import apple.uikit.UITableViewCell;
+import apple.uikit.c.UIKit;
+import apple.uikit.enums.NSUnderlineStyle;
+import apple.uikit.enums.UITableViewCellAccessoryType;
+import apple.uikit.enums.UITableViewCellStyle;
+import apple.uikit.enums.UITableViewRowAnimation;
 
-@com.intel.moe.natj.general.ann.Runtime(ObjCRuntime.class)
+@org.moe.natj.general.ann.Runtime(ObjCRuntime.class)
 @ObjCClassName("TasksViewController")
 @RegisterOnStartup
 public class TasksViewController extends ListViewController {

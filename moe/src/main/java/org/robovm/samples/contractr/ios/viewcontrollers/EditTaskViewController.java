@@ -1,30 +1,31 @@
 package org.robovm.samples.contractr.ios.viewcontrollers;
 
-import com.intel.moe.natj.general.Pointer;
-import com.intel.moe.natj.general.ann.NInt;
-import com.intel.moe.natj.general.ann.Owned;
-import com.intel.moe.natj.general.ann.RegisterOnStartup;
-import com.intel.moe.natj.objc.ObjCRuntime;
-import com.intel.moe.natj.objc.ann.ObjCClassName;
-import com.intel.moe.natj.objc.ann.Property;
-import com.intel.moe.natj.objc.ann.Selector;
+import org.moe.natj.general.Pointer;
+import org.moe.natj.general.ann.NInt;
+import org.moe.natj.general.ann.Owned;
+import org.moe.natj.general.ann.RegisterOnStartup;
+import org.moe.natj.objc.ObjCRuntime;
+import org.moe.natj.objc.ann.ObjCClassName;
+import org.moe.natj.objc.ann.Property;
+import org.moe.natj.objc.ann.Selector;
 
 import org.robovm.samples.contractr.core.Client;
 import org.robovm.samples.contractr.core.ClientModel;
 import org.robovm.samples.contractr.core.Task;
 import org.robovm.samples.contractr.core.TaskModel;
+import org.robovm.samples.contractr.ios.viewcontrollers.InjectedTableViewController;
 
 import javax.inject.Inject;
 
-import ios.foundation.NSIndexPath;
-import ios.uikit.UIPickerView;
-import ios.uikit.UISwitch;
-import ios.uikit.UITableView;
-import ios.uikit.UITextField;
-import ios.uikit.protocol.UIPickerViewDataSource;
-import ios.uikit.protocol.UIPickerViewDelegate;
+import apple.foundation.NSIndexPath;
+import apple.uikit.UIPickerView;
+import apple.uikit.UISwitch;
+import apple.uikit.UITableView;
+import apple.uikit.UITextField;
+import apple.uikit.protocol.UIPickerViewDataSource;
+import apple.uikit.protocol.UIPickerViewDelegate;
 
-@com.intel.moe.natj.general.ann.Runtime(ObjCRuntime.class)
+@org.moe.natj.general.ann.Runtime(ObjCRuntime.class)
 @ObjCClassName("EditTaskViewController")
 @RegisterOnStartup
 public class EditTaskViewController extends InjectedTableViewController implements UIPickerViewDataSource, UIPickerViewDelegate {

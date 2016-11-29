@@ -1,15 +1,15 @@
 package org.robovm.samples.contractr.ios.viewcontrollers;
 
-import com.intel.moe.natj.general.Pointer;
-import com.intel.moe.natj.general.ann.Owned;
-import com.intel.moe.natj.general.ann.RegisterOnStartup;
-import com.intel.moe.natj.objc.ObjCRuntime;
-import com.intel.moe.natj.objc.ann.ObjCClassName;
-import com.intel.moe.natj.objc.ann.Selector;
+import org.moe.natj.general.Pointer;
+import org.moe.natj.general.ann.Owned;
+import org.moe.natj.general.ann.RegisterOnStartup;
+import org.moe.natj.objc.ObjCRuntime;
+import org.moe.natj.objc.ann.ObjCClassName;
+import org.moe.natj.objc.ann.Selector;
 
-import ios.uikit.UITabBarController;
+import apple.uikit.UITabBarController;
 
-@com.intel.moe.natj.general.ann.Runtime(ObjCRuntime.class)
+@org.moe.natj.general.ann.Runtime(ObjCRuntime.class)
 @ObjCClassName("RootViewController")
 @RegisterOnStartup
 public class RootViewController extends UITabBarController {

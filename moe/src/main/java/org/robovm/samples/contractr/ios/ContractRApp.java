@@ -1,38 +1,38 @@
 package org.robovm.samples.contractr.ios;
 
-import com.intel.moe.natj.general.Pointer;
-import com.intel.moe.natj.general.ann.RegisterOnStartup;
-import com.intel.moe.natj.objc.ObjCRuntime;
-import com.intel.moe.natj.objc.ann.Selector;
+import org.moe.natj.general.Pointer;
+import org.moe.natj.general.ann.RegisterOnStartup;
+import org.moe.natj.objc.ObjCRuntime;
+import org.moe.natj.objc.ann.Selector;
 
 import org.robovm.samples.contractr.ios.viewcontrollers.RootViewController;
 
-import ios.NSObject;
-import ios.coregraphics.struct.CGPoint;
-import ios.coregraphics.struct.CGRect;
-import ios.coregraphics.struct.CGSize;
-import ios.foundation.NSArray;
-import ios.foundation.NSAttributedString;
-import ios.foundation.NSDictionary;
-import ios.foundation.NSMutableDictionary;
-import ios.uikit.UIApplication;
-import ios.uikit.UIColor;
-import ios.uikit.UIFont;
-import ios.uikit.UIImage;
-import ios.uikit.UINavigationBar;
-import ios.uikit.UISegmentedControl;
-import ios.uikit.UISwitch;
-import ios.uikit.UITabBar;
-import ios.uikit.UIViewController;
-import ios.uikit.UIWindow;
-import ios.uikit.c.UIKit;
-import ios.uikit.enums.UIBarStyle;
-import ios.uikit.protocol.UIApplicationDelegate;
+import apple.NSObject;
+import apple.coregraphics.struct.CGPoint;
+import apple.coregraphics.struct.CGRect;
+import apple.coregraphics.struct.CGSize;
+import apple.foundation.NSArray;
+import apple.foundation.NSAttributedString;
+import apple.foundation.NSDictionary;
+import apple.foundation.NSMutableDictionary;
+import apple.uikit.UIApplication;
+import apple.uikit.UIColor;
+import apple.uikit.UIFont;
+import apple.uikit.UIImage;
+import apple.uikit.UINavigationBar;
+import apple.uikit.UISegmentedControl;
+import apple.uikit.UISwitch;
+import apple.uikit.UITabBar;
+import apple.uikit.UIViewController;
+import apple.uikit.UIWindow;
+import apple.uikit.c.UIKit;
+import apple.uikit.enums.UIBarStyle;
+import apple.uikit.protocol.UIApplicationDelegate;
 
-import static ios.uikit.c.UIKit.NSFontAttributeName;
-import static ios.uikit.c.UIKit.UIGraphicsBeginImageContextWithOptions;
-import static ios.uikit.c.UIKit.UIGraphicsEndImageContext;
-import static ios.uikit.c.UIKit.UIGraphicsGetImageFromCurrentImageContext;
+import static apple.uikit.c.UIKit.NSFontAttributeName;
+import static apple.uikit.c.UIKit.UIGraphicsBeginImageContextWithOptions;
+import static apple.uikit.c.UIKit.UIGraphicsEndImageContext;
+import static apple.uikit.c.UIKit.UIGraphicsGetImageFromCurrentImageContext;
 
 /**
  * App entry point.

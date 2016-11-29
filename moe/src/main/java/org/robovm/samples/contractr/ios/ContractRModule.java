@@ -15,10 +15,10 @@ import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
-import ios.foundation.NSFileManager;
-import ios.foundation.NSURL;
-import ios.foundation.enums.NSSearchPathDirectory;
-import ios.foundation.enums.NSSearchPathDomainMask;
+import apple.foundation.NSFileManager;
+import apple.foundation.NSURL;
+import apple.foundation.enums.NSSearchPathDirectory;
+import apple.foundation.enums.NSSearchPathDomainMask;
 
 /**
  * Dagger {@link Module} that configures the iOS version of the ContractR app.

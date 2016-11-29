@@ -1,25 +1,25 @@
 package org.robovm.samples.contractr.ios.viewcontrollers;
 
-import com.intel.moe.natj.general.Pointer;
-import com.intel.moe.natj.general.ann.NInt;
-import com.intel.moe.natj.general.ann.Owned;
-import com.intel.moe.natj.general.ann.RegisterOnStartup;
-import com.intel.moe.natj.objc.ObjCRuntime;
-import com.intel.moe.natj.objc.ann.ObjCClassName;
-import com.intel.moe.natj.objc.ann.Property;
-import com.intel.moe.natj.objc.ann.Selector;
+import org.moe.natj.general.Pointer;
+import org.moe.natj.general.ann.NInt;
+import org.moe.natj.general.ann.Owned;
+import org.moe.natj.general.ann.RegisterOnStartup;
+import org.moe.natj.objc.ObjCRuntime;
+import org.moe.natj.objc.ann.ObjCClassName;
+import org.moe.natj.objc.ann.Property;
+import org.moe.natj.objc.ann.Selector;
 
-import ios.foundation.NSArray;
-import ios.foundation.NSIndexPath;
-import ios.uikit.UIBarButtonItem;
-import ios.uikit.UITableView;
-import ios.uikit.enums.UITableViewCellEditingStyle;
+import apple.foundation.NSArray;
+import apple.foundation.NSIndexPath;
+import apple.uikit.UIBarButtonItem;
+import apple.uikit.UITableView;
+import apple.uikit.enums.UITableViewCellEditingStyle;
 
 /**
  * Abstract {@link ListViewController} which displays a list of objects and
  * supports adding and removing objects.
  */
-@com.intel.moe.natj.general.ann.Runtime(ObjCRuntime.class)
+@org.moe.natj.general.ann.Runtime(ObjCRuntime.class)
 @ObjCClassName("ListViewController")
 @RegisterOnStartup
 public abstract class ListViewController extends InjectedTableViewController {
